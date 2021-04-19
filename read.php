@@ -36,6 +36,9 @@
     <tbody>
       <?php echo $records ?>
     </tbody>
-  </table>
+  </table> 
+    <a class="d-grid" href="./index.php?content=pre_update">  
+      <button type="button" class="btn btn-dark">update</button>
+    </a>
 </div>
 

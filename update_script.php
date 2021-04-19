@@ -3,16 +3,19 @@
     include("./functions.php");
     
     $id = $_POST["ID"];
-    $email = $_POST["Email"];
-    $password = $_POST["Password"];
-    $userrole = $_POST["Userrole"];
+    $email = $_POST["email"];
+    $userrole = $_POST["userrole"];
 
     $sql = "UPDATE `register` 
-            SET `Email` = '$email', 
-                `Password` = '$password', 
-                `Userrole` = '$userrole',
+            SET `Email` = '$email',
+                `Userrole` = '$userrole'
             WHERE `ID` = $id;";
 
-    mysqli_query($conn, $sql);
-    header("Location: ./index.php?content=message&alert=update_success");
+    $result = mysqli_query($conn, $sql);
+
+    if ($result) {
+        header("Location: ./index.php?content=message&alert=update_success");
+    } else {
+        header("Location: ./index.php?content=message&alert=update-error");
+    }
 ?>

@@ -67,18 +67,18 @@
             header("Refresh: 3.5; ./index.php?content=register");
         break;
 
-        case "update-succes" :
+        case "update_success" :
             echo '<div class="alert alert-success mt-4 w-50 mx-auto text-center" role="alert">
-                    Registering went succesfully. You are being redirected to the login page.
+                    Updating went succesfully. You are being redirected to the users page.
                   </div>';
-            header("Refresh: 3.5; ./index.php?content=login");
+            header("Refresh: 3.5; ./index.php?content=read");
         break;
 
         case "update-error" :
             echo '<div class="alert alert-danger mt-4 w-50 mx-auto text-center" role="alert">
                     Registering failed. Try again.
                   </div>';
-            header("Refresh: 3.5; ./index.php?content=activate&id=$id&pwh=$pwh");
+            header("Refresh: 3.5; ./index.php?content=update&id=$id");
         break;
 
         case "already-active" :

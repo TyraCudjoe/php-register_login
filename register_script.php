@@ -1,5 +1,4 @@
 <?php
-    var_dump($_POST);
 
     if (empty($_POST["email"])) {
         header("Location:./index.php?content=message&alert=no-email");

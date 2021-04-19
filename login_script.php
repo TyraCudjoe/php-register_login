@@ -1,5 +1,4 @@
 <?php
-    var_dump($_POST);
 
     include("./connectdb.php");
     include("./functions.php");
@@ -12,9 +11,6 @@
     }else {
         $sql = "SELECT * FROM `register` WHERE `Email` = '$email'";
         $result = mysqli_query($conn, $sql);
-        
-
-        // var_dump(mysqli_num_rows($result));
 
         if (!mysqli_num_rows($result)) {
             //Email unknown
@@ -22,7 +18,6 @@
         }else {
             $record = mysqli_fetch_assoc($result);
 
-            // var_dump($record["Activated"]);
 
             if (!$record["Activated"]) {
                 //Not activated account

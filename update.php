@@ -13,7 +13,6 @@
 
 
 
-
 <div class="container">
     <form action="./index.php?content=update_script" method="post" class="form-card card">
         <div class="row">
@@ -25,8 +24,9 @@
                     <label for="inputPassword" class="form-label mt-3">Password:</label>
                     <input name="password" type="password" class="form-control" id="inputPassword" aria-describedby="helpPassword"
                         placeholder="password123" value="<?php echo $record["Password"] ?>" disabled>
-                    <select class='form-select mt-3' id='floatingSelect' aria-label='Floating label select example' name='gender'>
+                    <select class='form-select mt-3' id='floatingSelect' aria-label='Floating label select example' name='userrole'>
                         <option selected>Open this select menu</option>
+                        <option value='Root' <?php if($record["Userrole"] == "Root") {echo "selected"; } ?>>Root</option>
                         <option value='Admin' <?php if($record["Userrole"] == "Admin") {echo "selected"; } ?>>Admin</option>
                         <option value='Moderator' <?php if($record["Userrole"] == "Moderator") {echo "selected"; } ?>>Moderator</option>
                         <option value='Customer' <?php if($record["Userrole"] == "Customer") {echo "selected"; } ?>>Customer</option>
