@@ -60,3 +60,10 @@ li {
 .cardCus {
     margin: 0 auto;
 }
+
+.kmhCard {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 20px;
+}

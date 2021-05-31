@@ -6,6 +6,5 @@
 
     //Destroys session_start() file
     session_destroy();
-
     header("Location: ./index.php?content=message&alert=logout");
 ?>

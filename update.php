@@ -31,6 +31,8 @@
                         <option value='Moderator' <?php if($record["Userrole"] == "Moderator") {echo "selected"; } ?>>Moderator</option>
                         <option value='Customer' <?php if($record["Userrole"] == "Customer") {echo "selected"; } ?>>Customer</option>
                     </select>
+                    <label for="inputNumber" class="form-label mt-3">Km/h to mph and vice versa</label>
+                    <input type="number" id="inputNumber" value="<?php echo $record["Speed"] ?>" class="form-control" aria-describedby="numberHelpBlock" disabled>
                 </div>
                 <input type="hidden" value="<?php echo $id; ?>" name="ID">
                 <div class="d-grid">

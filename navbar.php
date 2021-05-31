@@ -65,6 +65,7 @@
         <li class="nav-item <?php if ( $active == "oldtimers" ) { echo "active"; } ?>">
           <a class="nav-link" href="./index.php?content=oldtimers" tabindex="-1">Oldtimers</a>
         </li>
+        
       </ul>
 
       <ul class="navbar-nav ml-auto">
@@ -79,6 +80,7 @@
                       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item '; echo ($active == "read") ? "active" : ""; echo '" href="./index.php?content=read">Users</a>
                         <a class="dropdown-item '; echo ($active == "pre_update") ? "active" : ""; echo '" href="./index.php?content=pre_update">Update</a>
+                        <a class="dropdown-item '; echo ($active == "pre_update") ? "active" : ""; echo '" href="./index.php?content=calculator">Calculator</a>
                       </div>
                     </li>';
             break;
@@ -91,6 +93,7 @@
                       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item '; echo ($active == "read") ? "active" : ""; echo '" href="./index.php?content=read">Users</a>
                         <a class="dropdown-item '; echo ($active == "pre_update") ? "active" : ""; echo '" href="./index.php?content=pre_update">Update</a>
+                        <a class="dropdown-item '; echo ($active == "pre_update") ? "active" : ""; echo '" href="./index.php?content=calculator">Calculator</a>
                       </div>                      
                     </li>';
             break;
@@ -103,6 +106,7 @@
                       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item '; echo ($active == "c-dashboard") ? "active" : ""; echo '" href="./index.php?content=c-dashboard">Dasboard</a>
                         <a class="dropdown-item '; echo ($active == "news") ? "active" : ""; echo '" href="./index.php?content=news">News</a>
+                        <a class="dropdown-item '; echo ($active == "pre_update") ? "active" : ""; echo '" href="./index.php?content=calculator">calculator</a>
                       </div>                      
                     </li>';
             break;
@@ -115,6 +119,7 @@
                       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item '; echo ($active == "read") ? "active" : ""; echo '" href="./index.php?content=read">Users</a>
                         <a class="dropdown-item '; echo ($active == "pre_update") ? "active" : ""; echo '" href="./index.php?content=pre_update">Update</a>
+                        <a class="dropdown-item '; echo ($active == "pre_update") ? "active" : ""; echo '" href="./index.php?content=calculator">calculator</a>
                       </div>                      
                     </li>';
             break;

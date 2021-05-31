@@ -16,6 +16,7 @@
                     <td>". $record["Password"] ."</td>
                     <td>". $record["Userrole"] ."</td>
                     <td>". $record["Activated"] ."</td>
+                    <td>". $record["Speed"] ."</td>
                     <td>
                             <a href='./index.php?content=update&id=". $record["ID"] . "'>
                                 <img src='./img/icons/b_edit.png' alt='pencil'>
@@ -40,6 +41,7 @@
         <th scope="col">password</th>
         <th scope="col">userrole</th>
         <th scope="col">activated</th>
+        <th scope="col">speed</th>
         <th scope="col"></th>
         <th scope="col"></th>
       </tr>

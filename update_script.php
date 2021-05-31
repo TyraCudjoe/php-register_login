@@ -8,7 +8,7 @@
 
     $sql = "UPDATE `register` 
             SET `Email` = '$email',
-                `Userrole` = '$userrole'
+                `Userrole` = '$userrole',
             WHERE `ID` = $id;";
 
     $result = mysqli_query($conn, $sql);
